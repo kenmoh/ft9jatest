@@ -1,5 +1,9 @@
 # PROOJECT SUMMARY
 
+# NOTE
+
+The test passes but the CI did not pass during build process due to one of many limitation(FAILED SQL: DROP DATABASE) of `Djongo`
+
 ### Title: Stock PerformanceTracker.
 
 ### Description:
@@ -44,6 +48,24 @@ Frameworks such as FastAPI, Flask, Litestar will be a good fit to pair with Mong
 ```
 username: admin
 password: admin
+```
+
+### CLONE THE PROJECT
+
+```
+git clone https://github.com/kenmoh/ft9jatest.git
+```
+
+### INSTALL DEPENDENCIES
+
+```
+pip install -r requirements.txt
+```
+
+### RUN SERVER
+
+```
+python manage.py runserver
 ```
 
 ### RUN TEST
