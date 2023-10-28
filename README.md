@@ -62,7 +62,7 @@ python manage.py test
 ### ADMIN LOGIN
 
 ```
-navigate to local localhost:8000/admin
+navigate to local localhost:8000/admin on your preffered browser
 username: admin
 password: admin
 ```
