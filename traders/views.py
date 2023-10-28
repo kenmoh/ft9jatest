@@ -5,19 +5,19 @@ from django.shortcuts import render, get_object_or_404
 import plotly.express as px
 from .models import Trade, User
 
+# REST API (OPTIONAL)
+# class TradeListUserView(generics.ListAPIView):
+#     serializer_class = TradeSerializer
 
-class TradeListUserView(generics.ListAPIView):
-    serializer_class = TradeSerializer
-
-    def get_queryset(self):
-        user_id = self.kwargs['user_id']
-        return Trade.objects.filter(user_id=user_id)
+#     def get_queryset(self):
+#         user_id = self.kwargs['user_id']
+#         return Trade.objects.filter(user_id=user_id)
 
 
-class TradeListView(generics.ListAPIView):
+# class TradeListView(generics.ListAPIView):
 
-    serializer_class = TradeSerializer
-    queryset = Trade.objects.all()
+#     serializer_class = TradeSerializer
+#     queryset = Trade.objects.all()
 
 
 def index(request):
@@ -32,7 +32,6 @@ def index(request):
 
 
 def user_trades(request, id):
-
     """
     User dashboard route. It display the user profit or loss, graph
     """
@@ -56,6 +55,7 @@ def user_trades(request, id):
     # Total Profit/Loss of a user trade
     profit = Decimal(user.balance) - 100
     loss = 100 - Decimal(user.balance)
+
     context = {
         "chart": chart,
         "balance": Decimal(user.balance),

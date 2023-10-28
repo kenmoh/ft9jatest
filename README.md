@@ -4,7 +4,7 @@
 
 ### Description:
 
-This application help stock traders tracks their profit or loss overtime on per minute interval basis.
+This application help stock traders tracks their profit or loss overtime on per minute interval.
 
 ### Features:
 
@@ -44,4 +44,10 @@ Frameworks such as FastAPI, Flask, Litestar will be a good fit to pair with Mong
 ```
 username: admin
 password: admin
+```
+
+### RUN TEST
+
+```
+python manage.py test
 ```
