@@ -23,7 +23,7 @@ This application help stock traders tracks their profit or loss overtime on per 
 ```
 1. Python: Programming Language
 1. Django: Python web framework
-1. MongoDB: NoSQL Database
+1. MongoDB: NoSQL Database (hosted on the cloud)
 ```
 
 ```
