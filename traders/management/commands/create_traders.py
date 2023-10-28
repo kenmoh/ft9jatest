@@ -1,21 +1,18 @@
-from typing import Any
 from django.core.management.base import BaseCommand
-from django.utils import timezone
-import random
-from datetime import timedelta
 from traders.models import User
 
 """
-This is a management command to generate 10 random users and add to mongodb database.
+This is a management command to generate 10 random users and add to mongodb database
+with a given balance of $100.
 """
 
 
 class Command(BaseCommand):
     number_of_traders = 10
 
-    help = "Generate random Traders"
+    help = "Generate random User/Traders"
 
-    def handle(self, *args: Any, **options: Any):
+    def handle(self, *args, **kwargs):
         for i in range(self.number_of_traders):
             username = f'Trader{i + 1}'
             password = 'password' + username

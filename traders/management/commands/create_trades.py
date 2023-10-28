@@ -1,4 +1,3 @@
-from typing import Any
 from decimal import Decimal
 from django.core.management.base import BaseCommand
 from django.utils import timezone
@@ -9,7 +8,7 @@ from traders.models import Trade, User
 class Command(BaseCommand):
 
     """
-    This management command generate 25 trades for each user in the database
+    This management command generate 25 trades for each user/trader in the database
     """
     number_of_traders = 10
     number_of_data_points = 25
@@ -20,7 +19,7 @@ class Command(BaseCommand):
     def genetaye_random_profit_or_loss(self):
         return round(random.uniform(-10, 10), 2)
 
-    def handle(self, *args: Any, **options: Any):
+    def handle(self, *args, **kwargs):
         users = User.objects.all()
 
         # Get start time and interval for the timestamp
