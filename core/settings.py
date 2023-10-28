@@ -94,7 +94,9 @@ DATABASES = {
         'ENGINE': 'djongo',
         'NAME': 'trades',
         'CLIENT': {
-            'host': os.getenv('MONGODB_HOST'),
+            # 'host': os.getenv('MONGODB_HOST'),
+            # for testing purpose
+            'host': 'mongodb+srv://kenmoh:areneth@cluster0.nctfshi.mongodb.net/?retryWrites=true&w=majority',
 
         }
     }
