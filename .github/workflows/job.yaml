@@ -8,6 +8,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      MONGODB_HOST: ${{ secrets.MONGODB_HOST }}
 
     steps:
       - name: Checkout code
