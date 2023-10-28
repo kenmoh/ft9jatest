@@ -4,7 +4,7 @@
 
 The test passes but the CI did not pass during build process due to one of many limitation(FAILED SQL: DROP DATABASE) of `Djongo`
 
-### Title: Stock PerformanceTracker.
+### Title: Stock Performance Tracker.
 
 ### Description:
 
@@ -34,11 +34,6 @@ To give it a little bit of styles, we used bootstrap
 Django wasn’t built with NoSQL databases in mind, so using Django with MongoDB always take lots of work around. Libraries like Mongoengine and PyMongo can also be used, but you’d loose the Django ORM and Django Admin (two powerful features of Django) with these options. Using Djongo will affect performance as what it does is to conver SQL queries to MongoDB queries. Djongo is still very unstable and has lots of issues on github and aslo does not support Django version greater than 3.0.5.
 Frameworks such as FastAPI, Flask, Litestar will be a good fit to pair with MongoDB.
 
-### ADMIN LOGIN
-
-username: admin
-password: admin
-
 ### CLONE THE PROJECT
 
 ```
@@ -61,4 +56,12 @@ python manage.py runserver
 
 ```
 python manage.py test
+```
+
+### ADMIN LOGIN
+
+```
+navigate to local localhost:8000/admin
+username: admin
+password: admin
 ```
