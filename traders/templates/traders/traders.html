@@ -1,0 +1,22 @@
+{% extends 'traders/base.html' %} {% block content %}
+
+<div class="row justify-content-center mt-5">
+  <div class="col-6">
+    <h1 class="text-secondary">Traders</h1>
+    <small class="text-sm text-secondary mb-5"
+      >Click on a trader to view details</small
+    >
+    <div class="list-group">
+      {% for user in users %}
+      <a
+        href="{% url 'traders' id=user.id %}"
+        class="list-group-item d-flex justify-content-between align-items-center list-group-item-action"
+      >
+        {{ user.username }}
+        <span class="badge bg-secondary rounded-pill">{{user.balance}}</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock content %}

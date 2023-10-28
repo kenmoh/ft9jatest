@@ -1,0 +1,24 @@
+{% extends 'traders/base.html' %} {% block content %}
+
+<div class="row mt-5">
+  <h3 class="text-secondary">{{ user }} Dashboard</h3>
+  <div class="col-3">
+    {% if balance < 100 %}
+    <div class="alert alert-danger">
+      <small>Balance: {{ balance }}</small>
+      <br />
+      <small>Loss: {{ loss }}</small>
+    </div>
+    {% else %}
+    <div class="alert alert-success">
+      <small>Balance: {{ balance }}</small>
+      <br />
+      <small>Gain: +{{ profit }}</small>
+    </div>
+    {% endif %}
+  </div>
+</div>
+<hr class="bg-success" />
+{{ chart | safe}}
+<!-- ---------- -->
+{% endblock content %}
