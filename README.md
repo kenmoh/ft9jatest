@@ -3,6 +3,7 @@
 # NOTE
 
 The test passes but the CI did not pass during build process due to one of many limitation(FAILED SQL: DROP DATABASE) of `Djongo`
+The MONGODB_URL was expose for easy testing.
 
 ### Title: Stock Performance Tracker.
 
@@ -52,7 +53,7 @@ pip install -r requirements.txt
 python manage.py runserver
 ```
 
-### RUN TEST
+### RUN TEST (Optional)
 
 ```
 python manage.py test
