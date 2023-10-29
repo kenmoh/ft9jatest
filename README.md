@@ -66,3 +66,13 @@ navigate to local localhost:8000/admin on your preffered browser
 username: admin
 password: admin
 ```
+
+### RUN THE APP WITH DOCKER
+
+If you prefer to use docker, clone the project and cd into the project directory.
+Run the the command bellow and the project will run on local:8000 after building the image
+
+```
+docker-compose up
+
+```
