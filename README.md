@@ -35,6 +35,11 @@ To give it a little bit of styles, we used bootstrap
 Django wasn’t built with NoSQL databases in mind, so using Django with MongoDB always take lots of work around. Libraries like Mongoengine and PyMongo can also be used, but you’d loose the Django ORM and Django Admin (two powerful features of Django) with these options. Using Djongo will affect performance as what it does is to conver SQL queries to MongoDB queries. Djongo is still very unstable and has lots of issues on github and aslo does not support Django version greater than 3.0.5.
 Frameworks such as FastAPI, Flask, Litestar will be a good fit to pair with MongoDB.
 
+### OPPORTUNITIES
+
+For this type of application, it will be great to expose REST APIs or GraphQL API for mobile app and web app.
+I'd personally go for a cross-platform framework like React Native for the mobile app and framework like NextJS for the web app.
+
 ### CLONE THE PROJECT
 
 ```
