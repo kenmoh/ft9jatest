@@ -21,4 +21,4 @@ class Command(BaseCommand):
             user.save()
 
             self.stdout.write(self.style.SUCCESS(
-                f'Users {user.username} created successfully.'))
+                f'User {user.username} created successfully.'))
