@@ -39,6 +39,7 @@ Frameworks such as FastAPI, Flask, Litestar will be a good fit to pair with Mong
 
 For this type of application, it will be great to expose REST APIs or GraphQL API for mobile app and web app.
 I'd personally go for a cross-platform framework like React Native for the mobile app and framework like NextJS for the web app.
+Django will be a good fit to manage user data with SQL database for a project like this and use other framework that is compatible with MongoDB e.g NodeJS(ExpressJS) or FastAPI to manage the trading data for real time trading.
 
 ### CLONE THE PROJECT
 
